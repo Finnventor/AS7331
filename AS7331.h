@@ -120,6 +120,8 @@ public:
   //  gain = 0..11 (powers of 2)
   //         0  => 2048x
   //         11 => 1x
+  //  access to gain Register is only possible in setConfigurationMode()
+  //  see datasheet section 7.1.2
   bool     setGain(uint8_t gain);
   uint8_t  getGain();  //  from device.
 
@@ -128,6 +130,8 @@ public:
   //       0  = 1 ms
   //       14 = 16384 ms
   //       15 = 1 ms
+  //  access to conv Register is only possible in setConfigurationMode()
+  //  see datasheet section 7.1.2
   bool     setConversionTime(uint8_t convTime);
   uint8_t  getConversionTime();  //  from device.
 
