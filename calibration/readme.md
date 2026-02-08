@@ -8,6 +8,6 @@ We multiply by a factor of 1.4 to scale the solar simulator 350-400nm data to th
 From this, we can see the sensor has reasonably good performance, though there is some variation depending on which gain and conversion time settings are used:
 ![plot of response/expected ratio, by intensity](AS7331_AM1.5g_fixed.png)
 
-(an idealized sensor would have a flat line at 1.00)
+(Out-of-range/noise floor values were not included in this plot. An idealized sensor would have a flat line at 1.00)
 
 Note: It turned out that due to a conversion error in library version <= 0.4.0, in ./data/ the columns uva_mw actually are uva\_uw (see <https://github.com/RobTillaart/AS7331/issues/8>).
